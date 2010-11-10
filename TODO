@@ -1,0 +1,8 @@
+Update.py:
+    -   Check for valid names? [0-9,A-Z,a-z,_]+
+    -   Check for double names (case insensitive wise)
+
+sm.py:
+    -   Fix that mess up.
+    -   Cache files? (<NO>)
+
