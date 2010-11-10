@@ -16,7 +16,6 @@ def add_node_value(d, r, n, v):
     r.appendChild(t)
     t.appendChild(v)
 
-
 import xml.dom.minidom
 
 doc = xml.dom.minidom.Document()
