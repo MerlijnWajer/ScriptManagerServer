@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 
+#
+#   update.py: XML List Updater
+#   Part of the Simba project
+#
+#   This file produces a list.xml file based on the Scripts/ directory.
+#
+#   See the COPYING file on redistribution of this package.   
+#   Merlijn Wajer, 2010
+#
+
 def add_node_value(d, r, n, v):
     t = d.createElement(n)
     v = d.createTextNode(v)
