@@ -104,5 +104,3 @@ print doc.toxml()
 #        continue
 #    print 'root:',root
 #    print [name for name in files]
-
-
