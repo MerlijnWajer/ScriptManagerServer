@@ -32,14 +32,14 @@ def tarball(name=None):
     if not name in dirs:
         return None
 
-    os.chdir('Scripts')
+    os.chdir('Scripts/%s/files/' % name)
 
     outp = subprocess.Popen(['git', 'archive', '--format=tar', 'HEAD',
-        name], stdout=subprocess.PIPE)
+        '.'], stdout=subprocess.PIPE)
     d = outp.stdout.read()
     c = bz2.compress(d)
 
-    os.chdir('..')
+    os.chdir('../../..')
 
     return {'ftype': 'application/x-bzip-compressed-tar',
             'data' : c}
